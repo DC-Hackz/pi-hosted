@@ -4,7 +4,7 @@ These templates were originally created by Don from Novaspirtit Tech, along with
 
 I encourage everyone to instead visit his incredible work at [pi-hosted / pi-hosted](https://github.com/pi-hosted/pi-hosted) and [novaspirit / pi-hosted](https://github.com/novaspirit/pi-hosted), as well as check out his [YouTube channel](https://www.youtube.com/@NovaspiritTech/).
 
-My tweaks to these templates were mostly to satisfy my perference of having the container bind locations at <code>/portainer/name-of-container/</code> rather than <code>/portainer/Files/AppData/Config/name-of-container/</code>.
+My tweaks to these templates were mostly to satisfy my preference of having the container bind locations at <code>/portainer/name-of-container/</code> rather than <code>/portainer/Files/AppData/Config/name-of-container/</code>.
 
 <br/>
 
