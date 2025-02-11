@@ -2807,6 +2807,7 @@
 					"label": "OPENVPN_CUSTOM_CONFIG",
 					"default": "/gluetun/custom.conf"
 					"description": "Name of the custom configuration file stored in the directory bound to /gluetun/"
+				},
 				{
 					"name": "WIREGUARD_PRIVATE_KEY",
 					"label": "WIREGUARD_PRIVATE_KEY",
