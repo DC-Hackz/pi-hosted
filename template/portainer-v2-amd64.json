@@ -2784,7 +2784,7 @@
 			],
 			"title": "Gluetun",
 			"name": "gluetun",
-			"note": "<b>Template created by DC-Hackz <a href=\"https://github.com/DC-Hackz/pi-hosted\" target=\"_blank\">https://github.com/DC-Hackz/pi-hosted</a></b><br><b>Gluetun Github page: <a href=\"https://github.com/kdm12/gluetun\" target=\"_blank\">https://github.com/kdm12/gluetun</a></b>",
+			"note": "<b>Template created by DC-Hackz - <a href=\"https://github.com/DC-Hackz/pi-hosted\" target=\"_blank\">https://github.com/DC-Hackz/pi-hosted</a></b><br><b>Gluetun Github page: <a href=\"https://github.com/kdm12/gluetun\" target=\"_blank\">https://github.com/kdm12/gluetun</a></b>",
 			"description": "Gluetun VPN client using Wireguard or OpenVPN connection to service provider",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/dc-hackz/pi-hosted/refs/heads/main/images/gluetun.png",
