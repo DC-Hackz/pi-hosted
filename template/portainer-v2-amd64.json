@@ -2776,6 +2776,106 @@
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IWj1-j2QWvo target=\"_blank\">Novaspirit Tech - Route Docker Traffic Through VPN Container</a><br><br>"
 		},
 		{
+			"type": 1,
+			"categories": [
+				"Other",
+				"Tools",
+				"VPN"
+			],
+			"title": "Gluetun",
+			"name": "gluetun",
+			"note": "<b>Template created by DC-Hackz</b><br><b> Github page: <a href=\"https://github.com/DC-Hackz/pi-hosted\" target=\"_blank\">https://github.com/DC-Hackz/pi-hosted</a></b><br<b>Gluetun Github page: <a href=\"https://github.com/kdm12/gluetun\" target=\"_blank\">https://github.com/kdm12/gluetun</a></b>",
+			"description": "Gluetun VPN client using Wireguard or OpenVPN connection to service provider",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/dc-hackz/pi-hosted/refs/heads/main/images/gluetun.png",
+			"image": "qmcgaw/gluetun:latest",
+			"env": [
+				{
+					"name": "VPN_TYPE",
+					"label": "VPN_TYPE",
+					"default": "wireguard",
+					"description": "Set VPN type to wireguard or openvpn"
+				},
+				{
+					"name": "VPN_SERVICE_PROVIDER",
+					"label": "VPN_SERVICE_PROVIDER",
+					"default": "surfshark",
+					"description": "VPN service provider"
+				},
+				{
+					"name": "OPENVPN_CUSTOM_CONFIG",
+					"label": "OPENVPN_CUSTOM_CONFIG",
+					"default": "/gluetun/custom.conf"
+					"description": "Name of the custom configuration file stored in the directory bound to /gluetun/"
+				{
+					"name": "WIREGUARD_PRIVATE_KEY",
+					"label": "WIREGUARD_PRIVATE_KEY",
+					"default": "",
+					"description": "Wireguard Private Key provided by your VPN service for your account"
+				},
+				{
+					"name": "WIREGUARD_PUBLIC_KEY",
+					"label": "WIREGUARD_PUBLIC_KEY",
+					"default": "",
+					"description": "Wireguard Public Key for your chosen VPN server"
+				},
+				{
+					"name": "WIREGUARD_ADDRESSES",
+					"label": "WIREGUARD_ADDRESSES",
+					"default": "",
+					"description": "VPN server IP in CIDR xx.xx.xx.xx/xx notation provided by your VPN service"
+				},
+				{
+					"name": "SERVER_COUNTRIES",
+					"label": "SERVER_COUNTRIES",
+					"default": "United States",
+					"description": "Comma-separated list of permitted server countries"
+				},
+				{
+					"name": "SERVER_CITIES",
+					"label": "SERVER_CITIES",
+					"default": "Seattle",
+					"description": "Comma-separated list of permitted server cities"
+				},
+				{
+					"name": "HTTPPROXY",
+					"label": "HTTPPROXY",
+					"default": "on",
+					"description": "Set HTTP proxy on or off"
+				},
+				{
+					"name": "HTTPPROXY_USER",
+					"label": "HTTPPROXY_USER",
+					"default": "my-username",
+					"description": "Set a username for connecting to the HTTP proxy"
+				},
+				{
+					"name": "HTTPPROXY_PASSWORD",
+					"label": "HTTPPROXY_PASSWORD",
+					"default": "my-password",
+					"description": "Set a password for connecting to the HTTP proxy"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "America/Los_Angeles",
+					"description": "Time zone"
+				}
+			],
+			"ports": [
+				"8888:8888/tcp",
+				"8388:8388/tcp",
+				"8388:8388/udp"
+			],
+			"volumes": [
+			{
+				"container": "/gluetun",
+				"bind": "/portainer/gluetun"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools"
