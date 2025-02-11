@@ -2805,7 +2805,7 @@
 				{
 					"name": "OPENVPN_CUSTOM_CONFIG",
 					"label": "OPENVPN_CUSTOM_CONFIG",
-					"default": "/gluetun/custom.conf"
+					"default": "/gluetun/custom.conf",
 					"description": "Name of the custom configuration file stored in the directory bound to /gluetun/"
 				},
 				{
